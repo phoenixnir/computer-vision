@@ -14,6 +14,7 @@ for filename in filelist:
         #获取视频的尺寸及帧率
         size = (int(video.get(cv2.CAP_PROP_FRAME_WIDTH)), int(video.get(cv2.CAP_PROP_FRAME_HEIGHT)))
         fps = int(video.get(cv2.CAP_PROP_FPS))
+        fourcc = video.get(cv2.CAP_PROP_FOURCC)
 
 #文字内容及位置
 text = "3190102780 Wang Yiming"
